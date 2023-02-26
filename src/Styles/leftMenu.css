@@ -3,11 +3,12 @@
   height: 100%;
   min-height: 100vh;
   background: rgba(34, 34, 34, 0.6);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   padding: 20px 15px;
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.175.0.885,0.32,1.275);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 .leftMenu .logoContainer {
   color: #f1f1f1;
@@ -84,7 +85,7 @@
 
 .MenuContainer ul li a {
   text-decoration: none;
-  color: #ff9898;
+  color: #848484;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -196,7 +197,7 @@ font-size: 18px;
 
 .trackList .bottom input{
    position: relative;
-   height: 5px;
+   height: 2px;
    border: none;
    outline: none;
    border-radius: 5px;
@@ -209,7 +210,7 @@ font-size: 18px;
   content: '';
   top:0;
   left: 0;
-  background: #49e12e;
+  background: #e4b800;
   width: 50%;
   height:100%;
   border-radius: 10px;
@@ -233,7 +234,7 @@ font-size: 18px;
 }
 /* firefox */
 .trackList .bottom input::-moz-progress-bar{
-  background: #49e12e;
+  background: #e4b800;
   width: 50%;
   height:100%;
   border-radius: 10px;
@@ -241,7 +242,7 @@ font-size: 18px;
   transition: width 250ms linear;
 }
 .trackList .bottom input::-moz-range-thumb{
-  background: #49e12e;
+  background: #e4b800;
   width: 50%;
   height:100%;
   border-radius: 10px;
@@ -257,6 +258,8 @@ font-size: 18px;
 }
 .playlistContainer .playListScroll .playlist .trash{
 margin: auto;
+display: flex;
+margin-right: 0px;
 }
 .playlistContainer .playListScroll .playlist p{
   font-size: 16px;
