@@ -282,3 +282,82 @@ font-size: 12px;
     filter: drop-shadow(0px 0px 4px #e4b800);
 
 }
+@media screen and (max-width: 550px) {
+    .mainContainer {
+      min-width: 380px;
+    }
+  
+    .content {
+      padding: 10px 15px;
+    }
+  
+    .content .breadCrump P {
+      font-size: 12px;
+    }
+  
+    .content .breadCrump i {
+      font-size: 14px;
+    }
+  
+    .content .artist .left .name h2 {
+      font-size: 25px;
+    }
+  
+    .content .artist .right a {
+      padding: 5px 15px;
+      font-size: 12px;
+      margin: 0 10px;
+    }
+  
+    .menuList ul li {
+      margin: 0 5px;
+    }
+  
+    .mainContainer .menuList ul li a {
+      font-size: 14px;
+    }
+  
+    .mainContainer .menuList p {
+      font-size: 12px;
+    }
+  
+    .mainContainer .menuList p i {
+      font-size: 10px;
+    }
+  
+    .mainContainer .menuList p span {
+      margin-left: 0px;
+      font-size: 10px;
+      text-align: center;
+      display: block;
+    }
+  
+    .mainContainer .menuList {
+      padding: 10px 15px;
+    }
+  
+    .AudioList {
+      padding: 10px 5px;
+    }
+  
+    .AudioList .songs .song .section {
+      flex-direction: column;
+    }
+  
+    .AudioList .songs .song .section .songName {
+      width: 100%;
+    }
+  
+    .AudioList .songs .song .section .hits {
+      margin-left: 0;
+      margin-top: 5px;
+      justify-content: space-between;
+    }
+  }
+  
+@media screen and (max-width: 950px) {
+    .Banner {
+      height: 240px !important;
+      position: relative;
+    }
+  }

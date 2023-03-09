@@ -136,3 +136,30 @@
   font-size: 12px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 550px) {
+  .musicPlayer .songAttributes .bottom .currentTime {
+    margin-right: 0px;
+  }
+
+  .musicPlayer .songAttributes .bottom .duration {
+    margin-left: 0px;
+  }
+
+  .musicPlayer .songAttributes .top .middle .back i,
+  .musicPlayer .songAttributes .top .middle .forward i {
+    margin: 0 5px;
+  }
+
+  .musicPlayer .songAttributes .bottom .progressBar {
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1080px) {
+  .musicPlayer .songImage {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+}
