@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { LeftMenu } from './Components/LeftMenu';
 import MainContainer from './Components/MainContainer';

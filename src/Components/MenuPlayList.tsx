@@ -8,9 +8,9 @@ function MenuPlayList() {
     <div className="playlistContainer">
       <div className="nameContainer">
         <p>PlayList</p>
-        <i>
-          <FaPlus />
-        </i>
+        
+          <button ><i style={{backgroundColor:"GrayText", color:"darkblue"}}><FaPlus/></i></button>
+        
       </div>
 
       <div className="playListScroll">
@@ -34,4 +34,6 @@ function MenuPlayList() {
   );
 }
 
-export { MenuPlayList };
+export {MenuPlayList}
+  
+

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FaHeadphones, FaRegClock, FaHeart, FaRegHeart } from "react-icons/fa";
+import { FaHeadphones, FaRegClock } from "react-icons/fa";
 import { Songs } from "./Songs";
 import MusicPlayer from "./MusicPlayer";
+import { HiOutlineStar, HiStar } from "react-icons/hi";
 
 function AudioList() {
   const [songs, setSongs] = useState(Songs);
@@ -20,7 +21,7 @@ function AudioList() {
   }, []);
 
   const changeFavourite = (id: any) => {
-    Songs.forEach((song) => {
+    Songs.forEach((song:any) => {
       if (song.id === id) {
         song.favourite = !song.favourite;
       }
@@ -41,7 +42,7 @@ function AudioList() {
 
       <div className="songsContainer">
         {Songs &&
-          Songs.map((song, index) => (
+          Songs.map((song:any, index:any) => (
             <div
               className="songs"
               key={song?.id}
@@ -68,7 +69,7 @@ function AudioList() {
                       <i>
                         <FaRegClock />
                       </i>
-                      03.04
+                      01:29
                     </p>
                     <div
                       className="favourite"
@@ -76,11 +77,11 @@ function AudioList() {
                     >
                       {song?.favourite ? (
                         <i>
-                          <FaHeart />
+                          <HiStar />
                         </i>
                       ) : (
                         <i>
-                          <FaRegHeart />
+                          <HiOutlineStar/>
                         </i>
                       )}
                     </div>

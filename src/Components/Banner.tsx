@@ -23,7 +23,7 @@ function Banner() {
         <div className="artist">
           <div className="left">
             <div className="name">
-              <h2>A-ha</h2>
+              <h2>Blue Bird</h2>
               <BsPatchCheckFill className="check"/>
             </div>
 

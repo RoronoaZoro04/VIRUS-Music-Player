@@ -2,8 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../Styles/MusicPlayer.css";
 import {
-  FaRegHeart,
-  FaHeart,
   FaForward,
   FaStepForward,
   FaStepBackward,
@@ -13,6 +11,7 @@ import {
   FaShareAlt,
 } from "react-icons/fa";
 import { BsDownload } from "react-icons/bs";
+import { HiOutlineStar, HiStar } from "react-icons/hi";
 
 function MusicPlayer({ song, imgSrc, auto }:any) {
   const [isLove, setLove] = useState(false);
@@ -93,11 +92,11 @@ function MusicPlayer({ song, imgSrc, auto }:any) {
             <div className="loved" onClick={changeSongLove}>
               {isLove ? (
                 <i>
-                  <FaRegHeart />
+                  <HiStar />
                 </i>
               ) : (
                 <i>
-                  <FaHeart />
+                  <HiOutlineStar />
                 </i>
               )}
             </div>
