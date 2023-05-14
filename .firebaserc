@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "virus-a0b44"
-  }
+    "default": "music-player-rapidapi",
+    "staging": "music-player-rapidapi"
+  },
+  "targets": {},
+  "etags": {}
 }
